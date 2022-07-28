@@ -7,5 +7,5 @@ apps:
   - name: tailwind-playground
     path: ""
     text-resources:
-      - path: "src/data/*.ts"
-        format: react-hardcoded
+      - path: "src/components/HelloWorld.vue"
+        format: vue-hardcoded
