@@ -7,5 +7,5 @@ apps:
   - name: tailwind-playground
     path: ""
     text-resources:
-      - path: src/i18n/*.json
-        format: nested-key-value
+      - path: "src/data/*.ts"
+        format: react-hardcoded
