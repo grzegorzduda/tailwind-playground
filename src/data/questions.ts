@@ -1,0 +1,64 @@
+import { relationshipStatus } from "./profile";
+
+const radioChoices = [
+  {
+    label: 'Yes',
+    value: 'true',
+  },
+  {
+    label: 'No',
+    value: 'false',
+  },
+];
+
+export const dnr = [
+  {
+    value: 'weight',
+    label: 'Weight',
+    type: 'number_tag',
+    choices: null,
+    default: null,
+    required: true,
+  },
+  {
+    value: 'height',
+    label: 'Height',
+    type: 'number_tag',
+    choices: null,
+    default: null,
+    required: true,
+  },
+  {
+    value: 'delivery_type',
+    label: 'Was this A or B delivery?',
+    type: 'select',
+    choices: [
+      {
+        label: 'A-delivery',
+        value: 'a_delivery',
+      },
+      {
+        label: 'B-delivery',
+        value: 'b_delivery',
+      },
+    ],
+    default: null,
+    required: true,
+  },
+  {
+    value: 'some_choice',
+    label: 'Are you sure?',
+    type: 'radio',
+    choices: radioChoices,
+    default: null,
+    required: true,
+  },
+  {
+    value: 'relationship_status',
+    label: 'What is relationship status?',
+    type: 'select',
+    choices: relationshipStatus,
+    default: null,
+    required: true,
+  },
+];
