@@ -61,7 +61,7 @@
       },
       {
         "value": "date_of_birth",
-        "label": "Date of Birth",
+        "label": "Date of Birth Edited",
         "choices": null,
         "type": "date",
         "default": null,
